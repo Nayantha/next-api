@@ -4,7 +4,6 @@ import {Inter} from "next/font/google";
 import {classNameMerge} from "@/lib/utils";
 import Providers from "@/components/Providers";
 import NavBar from "@/components/NavBar"
-import {Toaster} from "@/ui/Toast";
 
 const inter = Inter({subsets: ["latin"]})
 
@@ -16,7 +15,7 @@ export default function RootLayout({children,}: { children: React.ReactNode }) {
         <body className={"min-h-screen bg-slate-50 dark:bg-slate-900 antialiased"}>
         <Providers>
             {children}
-            <Toaster position={"bottom-right"}/>
+            {/*<Toaster position={"bottom-right"}/>*/}
             {/* @ts-expect-error Server component*/}
             <NavBar/>
         </Providers>
