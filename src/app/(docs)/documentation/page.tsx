@@ -1,6 +1,7 @@
 import {FC} from 'react'
 import {Metadata} from "next";
 import LargeHeading from "@/ui/LargeHeading";
+import Paragraph from "@/ui/Paragraph";
 
 export const metadata: Metadata = {
     title: "API | Documentation",
@@ -12,6 +13,8 @@ const page: FC = ({}) => {
             <LargeHeading size={"large"}>
                 Making a request
             </LargeHeading>
+            <Paragraph>api/v1/similarity</Paragraph>
+            
         </div>
     </div>
 }
