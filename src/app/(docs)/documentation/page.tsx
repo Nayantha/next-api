@@ -2,6 +2,7 @@ import {FC} from 'react'
 import {Metadata} from "next";
 import LargeHeading from "@/ui/LargeHeading";
 import Paragraph from "@/ui/Paragraph";
+import DocumentationTabs from "@/components/DocumentationTabs";
 
 export const metadata: Metadata = {
     title: "API | Documentation",
@@ -14,7 +15,7 @@ const page: FC = ({}) => {
                 Making a request
             </LargeHeading>
             <Paragraph>api/v1/similarity</Paragraph>
-            
+            <DocumentationTabs/>
         </div>
     </div>
 }
