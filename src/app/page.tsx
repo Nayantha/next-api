@@ -1,5 +1,7 @@
 import {Metadata} from "next";
 import LargeHeading from "@/ui/LargeHeading";
+import Paragraph from "@/ui/Paragraph";
+import Link from "next/link";
 
 export const metadata: Metadata = {
     title: "API | Home",
@@ -13,6 +15,14 @@ export default function Home() {
                     <LargeHeading size={"large"} className={"three-d text-black dark:text-light-gold"}>
                         Easily Determine <br/> text similarity
                     </LargeHeading>
+                    <Paragraph className={"max-w-xl lg:text-left"}>
+                        Easily Determine similarity between two strings.{' '}
+                        <Link href={"/login"}
+                              className={"underline-offset-2 underline text-black dark:text-light-gold"}>
+                            API Key
+                        </Link>
+                        .
+                    </Paragraph>
                 </div>
             </div>
         </div>
